@@ -1,0 +1,11 @@
+{
+  "name": "tahagulay/simpleproductapi",
+  "description": "Simple Product API with professional dashboard frontend",
+  "type": "project",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "App\\": "api/"
+    }
+  }
+}

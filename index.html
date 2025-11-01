@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SimpleProductAPI Dashboard</title>
+<link rel="stylesheet" href="frontend/css/style.css">
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <h1>Ürün Yönetim Dashboard</h1>
+    </header>
+
+    <section class="stats">
+        <div class="stat-card">
+            <h3>Toplam Ürün</h3>
+            <p id="totalProducts">0</p>
+        </div>
+        <div class="stat-card">
+            <h3>Toplam Fiyat</h3>
+            <p id="totalPrice">0</p>
+        </div>
+        <div class="stat-card">
+            <h3>Ortalama Fiyat</h3>
+            <p id="avgPrice">0</p>
+        </div>
+    </section>
+
+    <section class="filters">
+        <input type="text" id="searchBar" placeholder="Ürün Ara...">
+        <select id="categoryFilter">
+            <option value="">Tüm Kategoriler</option>
+            <option value="Genel">Genel</option>
+            <option value="Elektronik">Elektronik</option>
+            <option value="Giyim">Giyim</option>
+            <option value="Gıda">Gıda</option>
+        </select>
+    </section>
+
+    <section class="product-container" id="productContainer"></section>
+
+    <section class="add-product">
+        <h2>Yeni Ürün Ekle</h2>
+        <form id="productForm">
+            <input type="text" id="name" placeholder="Ürün Adı" required>
+            <input type="number" id="price" placeholder="Fiyat" required step="0.01">
+            <select id="category" required>
+                <option value="Genel">Genel</option>
+                <option value="Elektronik">Elektronik</option>
+                <option value="Giyim">Giyim</option>
+                <option value="Gıda">Gıda</option>
+            </select>
+            <button type="submit">Ekle</button>
+        </form>
+    </section>
+
+</div>
+<script src="frontend/js/main.js"></script>
+</body>
+</html>
